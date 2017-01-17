@@ -1,7 +1,3 @@
-deploy:
-  override:
-    - deploy-to-gke trashbin-staging test shopify-codelab-and-demos
-
-machine:
-  environment:
-    K8S_TEMPLATE_FOLDER: config/deploy/production
+kubernetes:
+  namespace: trashbin-errors
+  context: tier5
