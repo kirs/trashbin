@@ -1,7 +1,3 @@
-deploy:
-  override:
-    - kubernetes-deploy trashbin tier5
-
-rollback:
-  override:
-    - kubernetes-deploy trashbin tier5
+kubernetes:
+  namespace: trashbin
+  context: tier5
