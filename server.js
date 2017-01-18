@@ -5,4 +5,6 @@ const handleRequest = (request, response) => {
   response.end('Hello World!');
 };
 const www = http.createServer(handleRequest);
-www.listen(8080);
+const port = 8080;
+console.log("Listening on " + port);
+www.listen(port);
